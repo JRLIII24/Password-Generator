@@ -1,4 +1,5 @@
 body {
+    font-family: "Arvo";
     margin: 0;
     height: 100%;
     background-color: #ffedd8;
@@ -61,6 +62,24 @@ button {
     text-align: center;
     flex: 1 1 45%;
     margin: 10px;
+}
+
+.password-box {
+    border: 2px solid #603808;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+    flex: 1 1 45%;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.password-box p {
+    margin: 0;
+    font-size: 28px;
+    word-break: break-word;
+    color: #603808;
 }
 
 @media (max-width: 600px) {
