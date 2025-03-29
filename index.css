@@ -1,3 +1,70 @@
 body {
     margin: 0;
+    height: 100%;
+    background-color: #ffedd8;
+    color: #603808;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translate(0, 100px); /* still works well */
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 50px auto; /* center horizontally */
+    transform: translateY(100px); /* vertical offset only */
+}
+
+button {
+    font-size: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #bc8a5f;
+    color: white;
+    padding: 15px;
+}
+
+.password {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin: 50px auto;
+    transform: translateY(100px);
+    background-color: #e7bc91;
+    width: 90%;
+    max-width: 800px;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+.password p {
+    word-break: break-all;
+    text-align: center;
+    flex: 1 1 45%;
+    margin: 10px;
+}
+
+@media (max-width: 600px) {
+    .password {
+        flex-direction: column;
+    }
 }
