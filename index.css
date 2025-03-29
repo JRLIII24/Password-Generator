@@ -1,43 +1,54 @@
 body {
-    font-family: "Arvo";
+    font-family: "Arvo", serif;
     margin: 0;
-    height: 100%;
+    min-height: 100vh;
     background-color: #ffedd8;
     color: #603808;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 3rem;
+    margin-bottom: 0.3em;
+    text-align: center;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0;
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transform: translate(0, 100px); /* still works well */
+    margin-top: 80px;
+    text-align: center;
 }
 
 .box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin: 50px auto; /* center horizontally */
-    transform: translateY(100px); /* vertical offset only */
+    margin: 40px auto;
+    transform: translateY(20px);
 }
 
 button {
-    font-size: 40px;
+    font-size: 1.5rem;
     border-radius: 10px;
     border: none;
     background-color: #bc8a5f;
     color: white;
-    padding: 15px;
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #a7744d;
+}
+
+button:active {
+    transform: scale(0.97);
 }
 
 .password {
@@ -45,23 +56,14 @@ button {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 30px;
     border: 2px solid black;
     border-radius: 30px;
-    margin: 50px auto;
-    transform: translateY(100px);
+    margin: 20px auto 60px auto;
     background-color: #e7bc91;
     width: 90%;
     max-width: 800px;
     box-sizing: border-box;
-    font-size: 30px;
-}
-
-.password p {
-    word-break: break-all;
-    text-align: center;
-    flex: 1 1 45%;
-    margin: 10px;
 }
 
 .password-box {
@@ -73,17 +75,40 @@ button {
     margin: 10px;
     text-align: center;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.password-box:hover {
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
 }
 
 .password-box p {
     margin: 0;
-    font-size: 28px;
+    font-size: 1.3rem;
     word-break: break-word;
     color: #603808;
 }
 
 @media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    button {
+        font-size: 1.2rem;
+    }
+
+    .password-box {
+        flex: 1 1 100%;
+    }
+
     .password {
         flex-direction: column;
+        padding: 20px;
     }
 }
