@@ -1,93 +1,121 @@
+
 body {
-    font-family: "Arvo", serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
     min-height: 100vh;
-    background-color: #ffedd8;
-    color: #603808;
+    background-color: #f5f7fa;
+    color: #2d3436;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+
 h1 {
-    font-size: 3rem;
-    margin-bottom: 0.3em;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 0.2em;
     text-align: center;
+    color: #2d3436;
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 400;
     text-align: center;
     margin-top: 0;
+    color: #636e72;
 }
 
 header {
     margin-top: 80px;
     text-align: center;
+    padding: 0 20px;
 }
+
 
 .box {
     margin: 40px auto;
-    transform: translateY(20px);
+    transform: translateY(10px);
 }
 
 button {
-    font-size: 1.5rem;
-    border-radius: 10px;
+    font-size: 1.25rem;
+    border-radius: 8px;
     border: none;
-    background-color: #bc8a5f;
-    color: white;
-    padding: 15px 25px;
+    background-color: #0984e3;
+    color: #ffffff;
+    padding: 12px 24px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.1s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
-    background-color: #a7744d;
+    background-color: #74b9ff;
 }
 
 button:active {
     transform: scale(0.97);
 }
 
+
 .password {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding: 30px;
-    border: 2px solid black;
-    border-radius: 30px;
+    padding: 40px;
+    border-radius: 16px;
     margin: 20px auto 60px auto;
-    background-color: #e7bc91;
+    background-color: #ffffff;
     width: 90%;
     max-width: 800px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
     box-sizing: border-box;
 }
 
 .password-box {
-    border: 2px solid #603808;
-    border-radius: 20px;
+    border: 1px solid #dfe6e9;
+    border-radius: 12px;
     padding: 20px;
-    background-color: white;
+    background-color: #f1f2f6;
     flex: 1 1 45%;
     margin: 10px;
     text-align: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.2s ease;
-    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+    cursor: default;
 }
 
 .password-box:hover {
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #dfe6e9;
 }
 
 .password-box p {
     margin: 0;
     font-size: 1.3rem;
     word-break: break-word;
-    color: #603808;
+    color: #2d3436;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.copy-btn {
+    margin-top: 12px;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0984e3;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.copy-btn:hover {
+    background-color: #74b9ff;
 }
 
 @media (max-width: 600px) {
@@ -96,11 +124,11 @@ button:active {
     }
 
     h2 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     button {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .password-box {
